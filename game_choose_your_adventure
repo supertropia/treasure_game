@@ -1,0 +1,54 @@
+print('''
+*******************************************************************************
+                      _.--.
+                        _.-'_:-'||
+                    _.-'_.-::::'||
+               _.-:'_.-::::::'  ||
+             .'`-.-:::::::'     ||
+            /.'`;|:::::::'      ||_
+           ||   ||::::::'     _.;._'-._
+           ||   ||:::::'  _.-!oo @.!-._'-.
+           \'.  ||:::::.-!()oo @!()@.-'_.|
+            '.'-;|:.-'.&$@.& ()$%-'o.'////
+              `>'-.!@%()@'@_%-'_.-o _.|'||
+               ||-._'-.@.-'_.-' _O.-o  ||
+               ||=[ '-._.-//-'    o |'||.
+               || '-.]=|| |'|      o  |'||
+               ||      || |'|        _| ';
+               ||      || |'|    _.-'_.-'
+               |'-._   || |'|_.-'_.-'
+                 '-._'-.|| |' `_.-'
+                    '-.||_/.-'
+******************************************************************************
+                  *** WELCOME TO TREASURE ISLAND!!***
+                YOUR MISSION IS TO FIND THE TRASURE           
+*******************************************************************************
+''')
+print("Your mission is to find the treasure.")
+
+#elegir si izq o der.
+donde_va = input("elige si queires dirigiste a la izquierda, o la derecha : ").lower()
+
+if donde_va == "izquierda":
+    print("sigues en camino!")
+# elegir si nadar o esperar
+    nada_o_espera = input("ahora elige, quieres nadar o esperar : ?")
+
+    if nada_o_espera == "esperar":
+        print("Ahora debes elegir una puerta")
+
+# elegir puertas
+        puerta = input("elije una de tres puertas: amarillo, azul , rojo : ").lower()
+
+        if puerta == "amarillo":
+            print("Ganaste! el tesoro esta aqui!!!!")
+
+        elif puerta == "rojo":
+                print(" puerta rojo: perdiste. en esta puerta esta lleno de monstruos de fuego")
+
+        else:
+                print("puerta azul : acabas de ser devorado por bestias. perdiste!")
+    else:
+        print("eres atrapado por bestias del oceano! perdiste") #si elige nadar
+else:
+    print("Caes en un agujero, perdiste!! buuu") #si elije ir por la derecha
